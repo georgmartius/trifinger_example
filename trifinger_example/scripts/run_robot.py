@@ -77,7 +77,7 @@ def main():
                         )
 
     # control loop
-    while t <= args.episode_length:
+    while t < args.episode_length:
         # get action
         target_position, torque = get_action(robot, t)
         # send action to robot
