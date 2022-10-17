@@ -35,14 +35,31 @@ Dependencies should be added to the 'workshop_image.def' image and a new images 
 
 ## Usage
 
+### Test locally in simulation
+
 To test your solution in simulation run
 ```bash
-python trifinger_example/scripts/run_robot.py --simulation
+python trifinger_example/scripts/run_robot.py --simulate
 ```
 
-To submit to the real robot cluster, make sure you have set up the `roboch.json`
-correctly and transferred it to your user account.
+### Submit to the real robot cluster
 
+To submit to the real robot cluster, make sure you have set up the `roboch.json`
+correctly and copied it to your user account via
+```bash
+scp roboch.json username@robots.real-robot-challenge.com:
+```
+You can then run the bash script to automatically submit, download and create the video:
+```bash
+bash scripts/submit_and_download.sh /path/to/output/dir/ 1 /path/to/video_creation_image.sif
+```
+
+Alternatively, you can also login directly
+```bash
+ssh annoyediguana@robots.real-robot-challenge.com`
+```
+which allows you to `check` your configuration, check the `status` of your job,
+and `cancel` a job (as long as it's not already running).
 
 
 
