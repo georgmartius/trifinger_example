@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>trifinger_example</name>
+  <version>1.0.0</version>
+  <description>
+      Example package for running a simple control loop on the TriFinger platform.
+  </description>
+
+  <maintainer email="nico.guertler@tue.mpg.de">Nico Gürtler</maintainer>
+
+  <license>BSD 3-clause</license>
+
+  <url type="website">https://real-robot-challenge.com/</url>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <exec_depend>robot_fingers</exec_depend>
+  <exec_depend>robot_interfaces</exec_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

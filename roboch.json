@@ -1,0 +1,9 @@
+{
+  "repository": "git@github.com:nicoguertler/trifinger_example.git",
+  "branch": "master",
+  "email": "your.email.address@domain.com",
+  "git_deploy_key": "workshop_deploy_key",
+  "submission_runner": "5oST7MrusT_move_cube",
+  "episode_length": 10000,
+  "singularity_image": "workshop_image.sif"
+}

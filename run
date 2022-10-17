@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# run the script via `ros2 run` (for python scripts a simple symlink would also
+# work but using `ros2 run` works for C++ executables as well)
+
+ros2 run trifinger_example run_robot

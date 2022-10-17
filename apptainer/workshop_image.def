@@ -1,0 +1,13 @@
+# Example for extending the Singularity image
+
+# Use the official challenge image as base
+Bootstrap: localimage
+From: /path/to/rrc2021.sif
+
+%post
+    # Put commands to install any additional dependencies here.
+    # Make sure everything runs automatically without human input (e.g. add
+    # `-y` to automatically say "yes" below).
+    apt-get update && apt-get install -y ffmpeg
+    apt install -y swig
+    python3 -m pip install numpy numpy-quaternion opencv-python==4.2.0.34
