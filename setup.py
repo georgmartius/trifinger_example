@@ -18,7 +18,7 @@ setuptools.setup(
         (os.path.join("share", PACKAGE_NAME), ["package.xml"]),
     ],
     # This is important as well
-    install_requires=["setuptools", "trifinger_simulation", "numpy-quaternion"],
+    install_requires=["setuptools", "trifinger_simulation", "numpy-quaternion", "quaternion"],
     zip_safe=True,
     description="Example package for TriFinger robot.",
     license="BSD 3-clause",
