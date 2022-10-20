@@ -1,5 +1,5 @@
 {
-  "repository": "git@github.com:nicoguertler/trifinger_example.git",
+  "repository": "git@github.com:georgmartius/trifinger_example.git",
   "branch": "master",
   "email": "your.email.address@domain.com",
   "git_deploy_key": "workshop_deploy_key",
